@@ -32,8 +32,8 @@
           var lname = '';
 
           if (typeof patient.name[0] !== 'undefined') {
-            fname = patient.name[0].given.concat(' ');
-            lname = patient.name[0].family.concat(' ');
+            fname = patient.name[0].given;
+            lname = patient.name[0].family;
           }
 
           var height = byCodes('8302-2');
